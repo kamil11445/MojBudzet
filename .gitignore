@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.tools/
+*.local
+*.tsbuildinfo
+.vercel/
+.env
+.env.*
+!.env.example
+moj-budzet-*.json

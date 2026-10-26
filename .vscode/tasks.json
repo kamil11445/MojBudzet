@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Sprawdź aplikację",
+			"type": "shell",
+			"command": "powershell -ExecutionPolicy Bypass -File ./scripts/check.ps1",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Uruchom Mój Budżet",
+			"type": "shell",
+			"command": "powershell -ExecutionPolicy Bypass -File ./scripts/start.ps1",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Podgląd PWA",
+			"type": "shell",
+			"command": "./.tools/node-v22.16.0-win-x64/node.exe ./node_modules/vite/bin/vite.js preview --host 0.0.0.0",
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
